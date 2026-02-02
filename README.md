@@ -28,7 +28,7 @@ javac FileProcessor.java FileProcessorDemo.java
 
 **For virtual threads version (FileProcessorVirtualThreads.java, Java 21+):**
 ```bash
-javac FileProcessor_VirtualThreads.java FileProcessorDemo.java
+javac FileProcessorVirtualThreads.java FileProcessorDemo.java
 ```
 
 ### 2. Configure the demo for your version
