@@ -28,7 +28,7 @@ javac FileProcessor.java FileProcessorDemo.java
 
 **For virtual threads version (FileProcessorVirtualThreads.java, Java 21+):**
 ```bash
-javac FileProcessorVirtualThreads.java FileProcessorDemo.java
+javac FileProcessorfVirtualThreads.java FileProcessorDemo.java
 ```
 
 ### 2. Configure the demo for your version
@@ -137,7 +137,7 @@ FileProcessor/
 ├── src/
 │   ├── main/java/
 │   │   ├── FileProcessor.java
-│   │   ├── FileProcessor_VirtualThreads.java
+│   │   ├── FileProcessorVirtualThreads.java
 │   │   └── FileProcessorDemo.java
 │   └── test/java/
 │       └── FileProcessorTest.java
@@ -212,7 +212,7 @@ ExecutorService executor = Executors.newFixedThreadPool(4);
 
 **The limitation:** If you have more files than thread pool size, the extras wait in a queue. So 1000 files with a pool of 4 still processes them in batches.
 
-### FileProcessor_VirtualThreads.java — Java 21+ Virtual Threads
+### FileProcessorVirtualThreads.java — Java 21+ Virtual Threads
 
 Uses Java 21's mind-blowing lightweight virtual threads:
 
